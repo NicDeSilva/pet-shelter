@@ -1,0 +1,16 @@
+<button [routerLink]="['/']" class="btn btn-primary">Home</button>
+<h4>Details about {{info.name}}</h4>
+<div>
+  <p>Pet Type: {{info.type}}</p>
+  <p>Description: {{info.description}}</p>
+
+  <p *ngIf='info.skill1'>Skills:</p>
+  <ul *ngIf='info.skill1'>
+    <li>{{info.skill1}}</li>
+    <li *ngIf='info.skill2'>{{info.skill2}}</li>
+    <li *ngIf='info.skill3'>{{info.skill3}}</li>
+  </ul>
+  <p>Likes: {{info.likes}}</p>
+</div>
+<button (click)='like()' class="btn btn-primary">Like this pet</button>
+<button (click)='deletePet()' class="btn btn-primary">Adopt this pet!</button>

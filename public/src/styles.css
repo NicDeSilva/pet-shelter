@@ -1,0 +1,14 @@
+form {
+    width:50%;
+}
+.table {
+    width:50%;
+}
+
+body {
+    padding: 20px;
+}
+
+.error {
+    color: red;
+}
